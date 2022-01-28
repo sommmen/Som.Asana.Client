@@ -3805,12 +3805,8 @@ components:
             - parent
           properties:
             parent:
-              allOf:
-                - type: string
-                  description: >-
-                    The id of parent to send this status update to. This can be a
-                    project,
-                    goal or portfolio.
+               type: string
+               description: The id of parent to send this status update to. This can be a project, goal or portfolio.
     StatusUpdateResponse:
       allOf:
         - $ref: '#/components/schemas/StatusUpdateBase'
