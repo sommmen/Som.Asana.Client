@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -14,7 +14,12 @@
     <PackageTags>Asana</PackageTags>
   </PropertyGroup>
 
-  <ItemGroup>
+	<PropertyGroup>
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+	</PropertyGroup>
+
+	<ItemGroup>
     <None Include="..\Asana_128x128_No_Text.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
